@@ -1,27 +1,40 @@
-# Ember-require-module
+# ember-require-module
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build Status](https://travis-ci.org/offirgolan/ember-require-module.svg)](https://travis-ci.org/offirgolan/ember-require-module)
+[![npm version](https://badge.fury.io/js/ember-require-module.svg)](http://badge.fury.io/js/ember-require-module)
+
+Easily require a module which will silently fail if it is not found.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-require-module`
-* `npm install`
-* `bower install`
+```
+ember install ember-require-module
+```
 
-## Running
+## Helpful Links
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+- ### [Changelog](CHANGELOG.md)
 
-## Running Tests
+## Looking for help?
+If it is a bug [please open an issue on GitHub](http://github.com/offirgolan/ember-require-module/issues).
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+## Usage
 
-## Building
+```js
+import requireModule from 'ember-require-module';
 
-* `ember build`
+const moment = requireModule('moment');
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+// requireModule will return undefined if moment is not found
+assert('MomentJS is required!', moment);
+
+
+// Dynamically require modules when needed
+function runTask(task, ...params) {
+  let task = requireModule(`my-addon/tasks/${task}`);
+
+  assert(`The task ${task} does not exist.`, task);
+
+  return task.run(...params);
+}
+```
