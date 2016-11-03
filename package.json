@@ -1,6 +1,6 @@
 {
   "name": "ember-require-module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Easily require a module which will silently fail if it is not found.",
   "directories": {
     "doc": "doc",
