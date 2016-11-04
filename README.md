@@ -37,4 +37,7 @@ function runTask(task, ...params) {
 
   return task.run(...params);
 }
+
+// import a named export from a module
+const THING = requireModule('path-to-module', 'THING');
 ```
