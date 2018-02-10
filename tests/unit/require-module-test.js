@@ -1,5 +1,5 @@
-import { module, test } from 'qunit';
 import Ember from 'ember';
+import { module, test } from 'qunit';
 import requireModule from 'ember-require-module';
 
 module('Unit | Util | requireModule');
