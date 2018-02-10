@@ -1,6 +1,6 @@
 {
   "name": "ember-require-module",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Easily require a module which will silently fail if it is not found.",
   "keywords": [
     "ember-addon",
