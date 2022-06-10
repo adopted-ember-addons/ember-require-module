@@ -8,9 +8,46 @@ module.exports = async function () {
     useYarn: true,
     scenarios: [
       {
+        name: 'ember-lts-3.8',
+        npm: {
+          devDependencies: {
+            'ember-data': '~3.8.0',
+            'ember-source': '~3.8.0',
+          },
+        },
+      },
+      {
+        name: 'ember-lts-3.12',
+        npm: {
+          devDependencies: {
+            'ember-data': '~3.12.0',
+            'ember-source': '~3.12.0',
+          },
+        },
+      },
+      {
+        name: 'ember-lts-3.16',
+        npm: {
+          devDependencies: {
+            'ember-data': '~3.16.0',
+            'ember-source': '~3.16.0',
+          },
+        },
+      },
+      {
+        name: 'ember-lts-3.20',
+        npm: {
+          devDependencies: {
+            'ember-data': '~3.20.0',
+            'ember-source': '~3.20.0',
+          },
+        },
+      },
+      {
         name: 'ember-lts-3.24',
         npm: {
           devDependencies: {
+            'ember-data': '~3.24.0',
             'ember-source': '~3.24.3',
           },
         },
@@ -19,6 +56,7 @@ module.exports = async function () {
         name: 'ember-lts-3.28',
         npm: {
           devDependencies: {
+            'ember-data': '~3.28.0',
             'ember-source': '~3.28.0',
           },
         },

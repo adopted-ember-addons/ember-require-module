@@ -1,4 +1,4 @@
-import Ember from 'ember';
+import DS from 'ember-data'; // eslint-disable-line ember/use-ember-data-rfc-395-imports
 import { module, test } from 'qunit';
 import requireModule from 'ember-require-module';
 
@@ -8,7 +8,7 @@ test('requires correct module using default export', function (assert) {
   assert.expect(1);
 
   try {
-    assert.strictEqual(requireModule('ember'), Ember);
+    assert.strictEqual(requireModule('ember-data'), DS);
   } catch (e) {
     // Should never get here
     assert.ok(false);
