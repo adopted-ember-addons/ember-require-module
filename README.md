@@ -1,6 +1,7 @@
 # ember-require-module
 
-[![Build Status](https://travis-ci.org/offirgolan/ember-require-module.svg)](https://travis-ci.org/offirgolan/ember-require-module)
+[![Build Status](https://github.com/rwwagner90/ember-require-module/actions/workflows/ci.yml/badge.svg)](https://github.com/rwwagner90/ember-require-module/actions/workflows/ci.yml)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-require-module.svg)](https://emberobserver.com/addons/ember-require-module)
 [![npm version](https://badge.fury.io/js/ember-require-module.svg)](http://badge.fury.io/js/ember-require-module)
 
 Dynamically require modules
@@ -14,7 +15,7 @@ ember install ember-require-module
 
 ## Looking for help?
 
-If it is a bug [please open an issue on GitHub](http://github.com/offirgolan/ember-require-module/issues).
+If it is a bug [please open an issue on GitHub](http://github.com/rwwagner90/ember-require-module/issues).
 
 
 ## Usage
