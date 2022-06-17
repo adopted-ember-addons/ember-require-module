@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-require-module'
+  name: require('./package').name
 };
